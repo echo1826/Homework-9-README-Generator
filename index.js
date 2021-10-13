@@ -2,41 +2,55 @@
 const fs = require('fs');
 const inquire = require('inquirer');
 const markdown = require('./utils/generateMarkdown');
+const isValid = (value) => {
+    if (value === '') {
+        return "Please type in an answer";
+    } else {
+        return true;
+    }
+}
 // TODO: Create an array of questions for user input
 const questions = [{
         type: 'input',
         message: "Name:",
-        name: "name"
+        name: "name",
+        validate: isValid
     },
     {
         type: 'input',
         message: "Github username:",
-        name: "github"
+        name: "github",
+        validate: isValid
     },
     {
         type: 'input',
         message: "What is the title of your project?",
-        name: "title"
+        name: "title",
+        validate: isValid
     },
     {
         type: 'input',
         message: "Email:",
-        name: "email"
+        name: "email",
+        validate: isValid
     },
     {
         type: 'input',
         message: "Description of project:",
-        name: "description"
+        name: "description",
+        validate: isValid
     },
     {
         type: 'input',
         message: "Installation instructions:",
-        name: "installation"
+        name: "installation",
+        validate: isValid
     },
     {
         type: 'input',
         message: "Usage:",
-        name: "usage"
+        name: "usage",
+        validate: isValid
     },
     {
         type: 'list',
@@ -50,12 +64,14 @@ const questions = [{
     {
         type: 'input',
         message: "How to contribute:",
-        name: "contribute"
+        name: "contribute",
+        validate: isValid
     },
     {
         type: 'input',
         message: "Testing commands:",
-        name: "testing"
+        name: "testing",
+        validate: isValid
     }
 ];
 
@@ -71,9 +87,9 @@ function init() {
     inquire
         .prompt(questions)
         .then((response) => {
-            // console.log(response.tableContents);
+            console.log(response);
             // console.log(markdown(response));
-            writeToFile('testing.md', response);
+            // writeToFile('testing.md', response);
         })
 }
 
