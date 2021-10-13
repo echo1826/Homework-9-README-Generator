@@ -25,7 +25,7 @@ testing
 
 # License
 
-This repo is covered under the MIT License.
+This repo is covered under the MIT License.<br>
 [License](https://choosealicense.com/licenses/mit/)
 
 # Contributing
