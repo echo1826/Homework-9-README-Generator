@@ -142,11 +142,11 @@ function generateMarkdown(data) {
   let licenseNotice = renderLicenseSection(data.license);
   let licenseBadge = renderLicenseBadge(data.license, licenseNotice);
   // console.log(contentsHeaders);
-  return `# ${data.title}\n${licenseBadge}\n# Table of Contents\n1. [Description](#description)<br>2. [Installation](#installation)<br>3. [Usage](#usage)<br>4. [License](#license)<br>5. [Contribute](#contributing)<br>
-  6. [Testing](#tests)<br>7. [Questions](#questions) 
-  \n\n# Description\n\n${data.description} \n\n# Installation\n\n${data.installation} \n
-  \n# Usage\n\n${data.usage} \n\n# License\n\n${licenseNotice}\n${licenseLink}\n\n# Contributing\n\n${data.contribute} \n\n# Tests\n\n${data.testing} \n\n# Questions\n\nIf you would like to reach out to me
-  with questions, please contact me at <${data.email}>. You can check out more of my projects at <https://github.com/${data.github}>`;
+  return `# ${data.title}\n${licenseBadge}\n# Table of Contents\n1. [Description](#description)<br>\n2. [Installation](#installation)<br>\n3. [Usage](#usage)<br>\n4. [License](#license)<br>\n5. [Contribute](#contributing)<br>
+6. [Testing](#tests)<br>\n7. [Questions](#questions) 
+\n\n# Description\n\n${data.description} \n\n# Installation\n\n${data.installation} \n
+\n# Usage\n\n${data.usage} \n\n# License\n\n${licenseNotice}\n${licenseLink}\n\n# Contributing\n\n${data.contribute} \n\n# Tests\n\n${data.testing} \n\n# Questions\n\nIf you would like to reach out to me
+with questions, please contact me at <${data.email}>. You can check out more of my projects at <https://github.com/${data.github}>`;
 }
 
 module.exports = generateMarkdown;
