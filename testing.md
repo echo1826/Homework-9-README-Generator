@@ -1,9 +1,14 @@
 # testing
-![License: This repo is covered under the MIT License.](https://img.shields.io/badge/license-MIT-green)
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
 # Table of Contents
-1.[Description](#description)<br>2.[Installation](#installation)<br>3.[Usage](#usage)<br>4.[License](#license)<br>5.[Contribute](#contributing)<br>
-  6.[Testing](#tests)<br>7.[Questions](#questions) 
-  
+1. [Description](#description)<br>
+2. [Installation](#installation)<br>
+3. [Usage](#usage)<br>
+4. [License](#license)<br>
+5. [Contribute](#contributing)<br>
+6. [Testing](#tests)<br>
+7. [Questions](#questions) 
+
 
 # Description
 
@@ -13,7 +18,7 @@ testing
 
 testing 
 
-  
+
 # Usage
 
 testing 
@@ -29,9 +34,9 @@ testing
 
 # Tests
 
-testingh 
+testing 
 
 # Questions
 
 If you would like to reach out to me
-  with questions, please contact me at <ethan@me.com>. You can check out more of my projects at <https://github.com/echo1826>
+with questions, please contact me at <ethan@me.com>. You can check out more of my projects at <https://github.com/echo1826>

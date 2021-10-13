@@ -27,7 +27,7 @@ npm i inquirer
 
 ## Usage
 
-
+[Demo Video](https://watch.screencastify.com/v/O1KMX9ZTTqCfveB07x2j)
 
 ## License
 
