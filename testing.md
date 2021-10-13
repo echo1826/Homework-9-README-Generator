@@ -1,5 +1,5 @@
-# testing
-![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)
+# Test Again
+![License: Mozilla Public License](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)
 # Table of Contents
 1.[Description](#description)<br>2.[Installation](#installation)<br>3.[Usage](#usage)<br>4.[License](#license)<br>5.[Contribute](#contributing)<br>
   6.[Testing](#tests)<br>7.[Questions](#questions)
@@ -7,29 +7,29 @@
 
 # Description
 
-testing
+This is a test for the automated generation of a readme after I put the writeFile method into the function defined for me
 
 # Installation
 
-testing
+Just type node index.js and this will generate your readme
 
   
 # Usage
 
-testing
+This is for automating a basic readme
 
 # License
 
-This application is covered under the Unlicense.
-[License](https://choosealicense.com/licenses/unlicense/)
+This application is covered under the Mozzilla Public License.
+[License](https://choosealicense.com/licenses/mpl-2.0/)
 
 # Contributing
 
-testing
+Open an issue or fork and do a pull request 
 
 # Tests
 
-testing
+Haven't figured this out
 
 # Questions
 
