@@ -58,7 +58,7 @@ const questions = [{
         name: "license",
         choices: ['MIT', 'Unlicense', 'Affero General Public License', 'General Public License',
             'Lesser General Public License', 'Mozilla Public License',
-            'Apache License', 'Boost Software License', 'No license'
+            'Apache License', 'Boost Software License', 'Eclipse Public License', 'BSD 2-Clause License', 'BSD 3-Clause License', 'No license'
         ]
     },
     {
@@ -88,8 +88,8 @@ function init() {
         .prompt(questions)
         .then((response) => {
             console.log(response);
-            // console.log(markdown(response));
-            // writeToFile('testing.md', response);
+            console.log(markdown(response));
+            writeToFile('testing.md', response);
         })
 }
 
