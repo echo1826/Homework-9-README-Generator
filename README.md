@@ -20,7 +20,7 @@ Make sure you have node.js installed:<br>
 ```shell
 npm init
 ```
-<br>Once node is installed and you've initialized the package.json, you install inquirer.js: <br>
+Once node is installed and you've initialized the package.json, you install inquirer.js: <br>
 ```shell
 npm i inquirer
 ```
