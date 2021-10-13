@@ -98,9 +98,9 @@ function generateMarkdown(data) {
   let licenseBadge = renderLicenseBadge(data.license);
   // console.log(contentsHeaders);
   return `# ${data.title}\n![License: ${data.license}](${licenseBadge})\n# Table of Contents\n1.[Description](#description)<br>2.[Installation](#installation)<br>3.[Usage](#usage)<br>4.[License](#license)<br>5.[Contribute](#contributing)<br>
-  6.[Testing](#tests)<br>7.[Questions](#questions)
-  \n\n# Description\n\n${data.description}\n\n# Installation\n\n${data.installation}\n
-  \n# Usage\n\n${data.usage}\n\n# License\n\n${licenseNotice}\n[License](${licenseLink})\n\n# Contributing\n\n${data.contribute}\n\n# Tests\n\n${data.testing}\n\n# Questions\n\nIf you would like to reach out to me
+  6.[Testing](#tests)<br>7.[Questions](#questions) <br>
+  \n\n# Description\n\n${data.description} <br>\n\n# Installation\n\n${data.installation} <br>\n
+  \n# Usage\n\n${data.usage} <br>\n\n# License\n\n${licenseNotice}<br>\n[License](${licenseLink})\n\n# Contributing\n\n${data.contribute} <br>\n\n# Tests\n\n${data.testing} <br>\n\n# Questions\n\nIf you would like to reach out to me
   with questions, please contact me at <${data.email}>. You can check out more of my projects at <https://github.com/${data.github}>`;
 }
 

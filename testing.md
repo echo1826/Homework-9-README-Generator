@@ -1,37 +1,37 @@
-# Test Again
-![License: Mozilla Public License](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)
+# testing
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
 # Table of Contents
 1.[Description](#description)<br>2.[Installation](#installation)<br>3.[Usage](#usage)<br>4.[License](#license)<br>5.[Contribute](#contributing)<br>
-  6.[Testing](#tests)<br>7.[Questions](#questions)
+  6.[Testing](#tests)<br>7.[Questions](#questions) <br>
   
 
 # Description
 
-This is a test for the automated generation of a readme after I put the writeFile method into the function defined for me
+testing testing testing <br>
 
 # Installation
 
-Just type node index.js and this will generate your readme
+testing <br>
 
   
 # Usage
 
-This is for automating a basic readme
+testing <br>
 
 # License
 
-This application is covered under the Mozzilla Public License.
-[License](https://choosealicense.com/licenses/mpl-2.0/)
+This application is covered under the MIT License.<br>
+[License](https://choosealicense.com/licenses/mit/)
 
 # Contributing
 
-Open an issue or fork and do a pull request 
+testing <br>
 
 # Tests
 
-Haven't figured this out
+testing <br>
 
 # Questions
 
 If you would like to reach out to me
-  with questions, please contact me at <ethan@me.com>. You can check out more of my projects at <https://github.com/echo1826>
+  with questions, please contact me at <testing>. You can check out more of my projects at <https://github.com/echo1826>
