@@ -1,42 +1,42 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
+function renderLicenseBadge(license, licenseNotice) {
   switch (license) {
     case 'MIT': {
-      return `https://img.shields.io/badge/license-MIT-green`;
+      return `![License: ${licenseNotice}](https://img.shields.io/badge/license-MIT-green)`;
     }
     case 'Unlicense': {
-      return `https://img.shields.io/badge/license-Unlicense-blue.svg`;
+      return `![License: ${licenseNotice}](https://img.shields.io/badge/license-Unlicense-blue.svg)`;
     }
     case 'Affero General Public License': {
-      return `https://img.shields.io/badge/License-AGPL%20v3-blue.svg`;
+      return `![License: ${licenseNotice}](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)`;
     }
     case 'General Public License': {
-      return `https://img.shields.io/badge/License-GPLv3-blue.svg`;
+      return `![License: ${licenseNotice}](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
     }
     case 'Lesser General Public License': {
-      return `https://img.shields.io/badge/License-LGPL%20v3-blue.svg`;
+      return `![License: ${licenseNotice}](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)`;
     }
     case 'Mozilla Public License': {
-      return `https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg`;
+      return `![License: ${licenseNotice}](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)`;
     }
     case 'Apache License': {
-      return `https://img.shields.io/badge/license-Apache--3.0-blue`;
+      return `![License: ${licenseNotice}](https://img.shields.io/badge/license-Apache--3.0-blue)`;
     }
     case 'Boost Software License': {
-      return `https://img.shields.io/badge/License-Boost%201.0-lightblue.svg`
+      return `![License: ${licenseNotice}](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)`
     }
     case 'Eclipse Public License': {
-      return `https://img.shields.io/badge/License-EPL%201.0-red.svg`
+      return `![License: ${licenseNotice}](https://img.shields.io/badge/License-EPL%201.0-red.svg)`;
     }
     case 'BSD 2-Clause License': {
-      return `https://img.shields.io/badge/License-BSD%202--Clause-orange.svg`;
+      return `![License: ${licenseNotice}](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)`;
     }
     case 'BSD 3-Clause License': {
-      return `https://img.shields.io/badge/License-BSD%203--Clause-blue.svg`;
+      return `![License: ${licenseNotice}](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)`;
     }
     case 'CC0': {
-      return `https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg`;
+      return `![License: ${licenseNotice}](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)`;
     }
     default: {
       return "";
@@ -140,9 +140,9 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   let licenseLink = renderLicenseLink(data.license);
   let licenseNotice = renderLicenseSection(data.license);
-  let licenseBadge = renderLicenseBadge(data.license);
+  let licenseBadge = renderLicenseBadge(data.license, licenseNotice);
   // console.log(contentsHeaders);
-  return `# ${data.title}\n![License: ${data.license}](${licenseBadge})\n# Table of Contents\n1.[Description](#description)<br>2.[Installation](#installation)<br>3.[Usage](#usage)<br>4.[License](#license)<br>5.[Contribute](#contributing)<br>
+  return `# ${data.title}\n${licenseBadge}\n# Table of Contents\n1.[Description](#description)<br>2.[Installation](#installation)<br>3.[Usage](#usage)<br>4.[License](#license)<br>5.[Contribute](#contributing)<br>
   6.[Testing](#tests)<br>7.[Questions](#questions) 
   \n\n# Description\n\n${data.description} \n\n# Installation\n\n${data.installation} \n
   \n# Usage\n\n${data.usage} \n\n# License\n\n${licenseNotice}\n${licenseLink}\n\n# Contributing\n\n${data.contribute} \n\n# Tests\n\n${data.testing} \n\n# Questions\n\nIf you would like to reach out to me
