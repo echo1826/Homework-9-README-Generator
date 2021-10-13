@@ -32,7 +32,14 @@ const questions = [{
         type: 'input',
         message: "Email:",
         name: "email",
-        validate: isValid
+        validate(value) {
+            const pass = value.includes("@");
+            if(pass) {
+                return true;
+            }else {
+                return "Please enter a valid email";
+            }
+        }
     },
     {
         type: 'input',
