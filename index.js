@@ -42,7 +42,10 @@ const questions = [{
         type: 'list',
         message: "Choose a license:",
         name: "license",
-        choices: ['MIT', 'Unlicense', 'Affero General Public License', 'General Public License', 'Lesser General Public License', 'Mozilla Public License', 'Apache License', 'Boost Software License']
+        choices: ['MIT', 'Unlicense', 'Affero General Public License', 'General Public License',
+            'Lesser General Public License', 'Mozilla Public License',
+            'Apache License', 'Boost Software License', 'No license'
+        ]
     },
     {
         type: 'input',

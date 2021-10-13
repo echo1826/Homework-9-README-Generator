@@ -26,6 +26,9 @@ function renderLicenseBadge(license) {
     case 'Boost Software License': {
       return `https://img.shields.io/badge/License-Boost%201.0-lightblue.svg`
     }
+    default: {
+      return "";
+    }
   }
 }
 
