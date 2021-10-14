@@ -131,7 +131,7 @@ function renderLicenseSection(license) {
       return `This repo is covered under the CC0 Universal License`;
     }
     default: {
-      return "No license"
+      return ""
     }
   }
 }
