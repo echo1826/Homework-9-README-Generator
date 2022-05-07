@@ -97,7 +97,7 @@ function init() {
             console.log(response);
             console.log(markdown(response));
             writeToFile('testing.md', response);
-        })
+        });
 }
 
 // Function call to initialize app
